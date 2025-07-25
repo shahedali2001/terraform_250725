@@ -13,11 +13,11 @@ resource "azurerm_virtual_network" "vnetblock" {
   name                = "demo-vnet"
   location            = "Central India"
   resource_group_name = "demo-rg"
-  address_space       = ["10.0.0.0/16"]
+  address_space       = ["10.0.0.0/17"]
 }
 esource "azurerm_virtual_network" "vnetblock2" {
   name                = "demo-vnet1"
   location            = "Central India"
   resource_group_name = "demo-rg"
-  address_space       = ["10.0.1.0/20"]
+  address_space       = ["10.0.128.0/17"]
 }
