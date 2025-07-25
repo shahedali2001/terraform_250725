@@ -8,3 +8,10 @@ resource "azurerm_resource_group" "rg-block" {
   name     = "demo-rg"
   location = "central india" # ya jo bhi actual location ho
 }
+
+resource "azurerm_virtual_network" "vnetblock" {
+  name                = "demo-vnet"
+  location            = "Central India"
+  resource_group_name = "demo-rg"
+  address_space       = ["10.0.0.0/16"]
+}
