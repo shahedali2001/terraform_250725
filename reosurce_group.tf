@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rg-block" {
 
 }
 
-resource "azurerm_resource_group" "rg-block" {
+resource "azurerm_resource_group" "rg-block2" {
   name     = "demo-rg"
   location = "central india" # ya jo bhi actual location ho
 }
